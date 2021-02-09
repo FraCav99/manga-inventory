@@ -1,0 +1,18 @@
+// Set global variables
+$deepblue: #03071E;
+$blueHeader: #162164;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: $deepblue;
+}
