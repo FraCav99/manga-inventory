@@ -1,0 +1,26 @@
+{
+  "name": "manga-inventory",
+  "version": "1.0.0",
+  "description": "A simple inventory project by The Odin Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FraCav99/manga-inventory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FraCav99/manga-inventory/issues"
+  },
+  "homepage": "https://github.com/FraCav99/manga-inventory#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "env": "^0.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15"
+  }
+}
