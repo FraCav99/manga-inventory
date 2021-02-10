@@ -17,9 +17,5 @@ html {
 
 body {
     background-color: $deepblue;
-}
-
-body, html {
-    height: 100%;
-    // border: 1px solid yellow;
+    position: relative;
 }

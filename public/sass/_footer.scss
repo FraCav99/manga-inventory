@@ -1,8 +1,9 @@
 footer {
-    border: 1px solid yellowgreen;
-    // display: flex;
-    // align-items: center;
-    // padding: 0 20px;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
     color: white;
 
     a {
@@ -18,9 +19,15 @@ footer {
         }
     }
 
-    // span {
-    //     width: 50%;
-    //     display: flex;
-    //     justify-content: flex-end;
-    // }
+    span {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        .placeholder {
+            display: none;
+        }
+    }
 }
