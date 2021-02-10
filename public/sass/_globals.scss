@@ -1,6 +1,7 @@
 // Set global variables
 $deepblue: #03071E;
 $blueHeader: #162164;
+$orange: #DC2F02;
 
 
 * {
@@ -11,8 +12,14 @@ $blueHeader: #162164;
 
 html {
     font-family: 'Rubik', sans-serif;
+    font-size: 62.5%;
 }
 
 body {
     background-color: $deepblue;
+}
+
+body, html {
+    height: 100%;
+    // border: 1px solid yellow;
 }

@@ -7,38 +7,193 @@
 
 html {
   font-family: 'Rubik', sans-serif;
+  font-size: 62.5%;
 }
 
 body {
   background-color: #03071E;
 }
 
-nav {
-  background-color: #162164;
+body, html {
+  height: 100%;
 }
 
-nav .navbar-brand {
+nav {
+  background-color: #162164;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+nav .brand-container {
+  width: 23rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-nav .navbar-brand .logo-text {
-  color: white;
+nav .brand-container span {
+  font-size: 2rem;
   font-weight: bold;
-  padding-left: 10px;
 }
 
-nav ul {
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav .image-container {
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+
+nav .image-container img {
   width: 100%;
+  height: 100%;
+}
+
+nav .burger-menu {
+  display: none;
+  cursor: pointer;
+  width: 5rem;
+  height: 4rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 1rem;
+}
+
+nav .burger-menu .line {
+  border: 1px solid white;
+}
+
+nav .nav-links {
+  width: 40rem;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-links .nav-link {
+  font-size: 1.7rem;
+}
+
+nav .nav-links .nav-link a:hover {
+  color: #979797;
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    padding-left: 0;
+  }
+  nav .burger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .nav-links {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    background-color: #162164;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 20rem;
+    padding: 2rem;
+    z-index: 99;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+}
+
+.index-container {
+  width: 100%;
+  color: white;
+  padding-left: 40px;
+  padding-top: 80px;
+}
+
+.index-container h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.index-container h2 {
+  font-weight: 300;
+  padding-left: 70px;
+}
+
+.index-container button {
+  background-color: #DC2F02;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.index-container button:hover {
+  background-color: #a52100;
+}
+
+.index-container .image-container {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  bottom: 0;
+  right: 0;
+}
+
+footer {
+  border: 1px solid yellowgreen;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer svg {
+  fill: white;
+  height: 30px;
+  width: 30px;
+}
+
+footer svg:hover {
+  fill: #adadad;
 }
 /*# sourceMappingURL=style.css.map */

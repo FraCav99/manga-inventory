@@ -1,7 +1,7 @@
 const express = require('express');
 const indexRouter = require('./routes/index');
 const mangaRouter = require('./routes/manga');
-const authorRouter = require('./routes/author');
+const authorRouter = require('./routes/authors');
 const adminRouter = require('./routes/admin');
 const categoriesRouter = require('./routes/categories');
 
@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 
 app.use('/', indexRouter);
 app.use('/manga', mangaRouter);
-app.use('/author', authorRouter);
+app.use('/authors', authorRouter);
 app.use('/categories', categoriesRouter);
 app.use('/admin', adminRouter);
 
